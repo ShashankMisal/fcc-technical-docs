@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-size: 10px;
+}
+
+#navbar{
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#navbar ul{
+    /* border: 2px solid violet; */
+    text-align: center;
+}
+
+.nav-link{
+    transition: transform 1s;
+}
+
+
+#navbar li{
+    /* border: 2px solid blue; */
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    width: 100%;
+   box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+   0 2px 2px rgba(0,0,0,0.15), 
+   0 4px 4px rgba(0,0,0,0.15), 
+   0 8px 8px rgba(0,0,0,0.15);
+   
+   background-color: yellow;
+   padding: 1rem;
+}
+
+#navbar header{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+#main-doc{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
+
+    overflow-x: hidden;
+}
+
+
+
+
+
+.main-section header{
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+article{
+    /* text-align: center; */
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+article p{
+    margin-bottom: 1.5rem;
+}
+
+article li{
+    margin-left: 2rem;
+    margin-bottom: 1.1rem;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    overflow-x: scroll;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+  }
+
+
+  section{
+      background-color: yellow;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+      0 2px 2px rgba(0,0,0,0.20), 
+      0 4px 4px rgba(0,0,0,0.15), 
+      0 8px 8px rgba(0,0,0,0.10),
+      0 16px 16px rgba(0,0,0,0.05);
+      padding: 2rem;
+  }
+
+@media only screen and (max-width: 1000px){
+    #navbar{
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 25rem;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #navbar header{
+        font-size: 1.2rem;
+    }
+
+    #main-doc{
+        width: 100%;
+        position: relative;
+        margin-left: 0px;
+        /* top: 20rem; */
+        margin-top: 25rem;
+        padding: 1.5rem;
+    }
+
+    .nav-link{
+        transform: scale(2.2);
+    }
+
+    article {
+        padding: 0;
+        margin: 0;
+    }
+
+}   
